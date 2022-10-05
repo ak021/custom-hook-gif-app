@@ -39,7 +39,7 @@ function Random_v1() {
         )}
       </div>
       <button
-        class="btn btn-outline btn-primary btn-sm mt-4"
+        className="btn btn-outline btn-primary btn-sm mt-4"
         onClick={handleNewFetch}
       >
         New gif

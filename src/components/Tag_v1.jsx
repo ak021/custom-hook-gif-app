@@ -44,12 +44,12 @@ function Tag_V1() {
           value={tag}
           type="text"
           placeholder="Type here"
-          class="input input-bordered input-sm w-full max-w-xs"
+          className="input input-bordered input-sm w-full max-w-xs"
           onChange={(e) => setTag(e.target.value)}
         />
 
         <button
-          class="btn btn-outline btn-primary btn-sm ml-4"
+          className="btn btn-outline btn-primary btn-sm ml-4"
           onClick={handleNewFetch}
         >
           Search gif

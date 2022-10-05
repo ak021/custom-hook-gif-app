@@ -10,9 +10,9 @@ function Random_v2() {
   }, []);
 
   return (
-    <div className="flex-1 flex items-center	justify-between card bg-base-300 rounded-box p-4 drop-shadow-[0_5px_5px_rgba(256,256,256,0.15)]">
+    <div className="flex-1 flex items-center justify-between card bg-base-300 rounded-box p-4 drop-shadow-[0_5px_5px_rgba(256,256,256,0.15)]">
       <h1 className="text-sm font-bold">Random gif</h1>
-      <div className="flex-1 border w-full flex items-center justify-center mt-4 rounded-box">
+      <div className="flex-1 flex-col md:flex-row border w-full flex items-center justify-center mt-4 rounded-box">
         {isLoading ? (
           <Loader />
         ) : (
@@ -24,7 +24,7 @@ function Random_v2() {
         )}
       </div>
       <button
-        class="btn btn-outline btn-primary btn-sm mt-4"
+        className="btn btn-outline btn-primary btn-sm mt-4"
         onClick={() => fetchGif()}
       >
         New gif
